@@ -17,8 +17,8 @@
           {# Some logic on what to display for last item#}
           {% if user.is_authenticated %}
             <li><a href="{% url 'home:logout' %}">Logout</a></li>
-     <!-- {% else %}
-            <li><a class="navbar-link" href="{% url 'home:login' %}">Login</a></li> --> 
+          {% else %}
+            <li><a class="navbar-link" href="{% url 'home:login' %}">Login</a></li>
           {% endif %}
 </ul>
       </div>
