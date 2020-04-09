@@ -21,6 +21,6 @@ from home import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    url(r'^logout/$', views.user_logout, name='logout'),
+    path(r'^logout/$', views.user_logout, name='logout'),
      url(r'^special/',views.special,name='special'),
 ]
